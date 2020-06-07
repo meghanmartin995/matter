@@ -120,13 +120,16 @@ const shapes = Composites.stack(50, 50, 10, 10, 40, 40, function (x, y) {
   return createShape(x, y)
 })
 
-const trap = Bodies.trapezoid(w / 2, h / 2, 450, 450, 2.8, {
+const circle = Bodies.circle(w / 2, h / 2, Math.min(w / 4.5, h / 4.5), {
   isStatic: true,
   render: {
     fillStyle: '#F6B67B',
     strokeStyle: 'transparent'
   }
 })
+
+
+
 
 const mouse = MouseConstraint.create(engine, {
   element: section,
@@ -140,7 +143,7 @@ const mouse = MouseConstraint.create(engine, {
 World.add(engine.world, [
   mouse,
   shapes,
-  trap,
+  circle,
   ground,
   ceiling,
   leftWall,
