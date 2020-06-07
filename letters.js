@@ -120,7 +120,7 @@ const shapes = Composites.stack(50, 50, 10, 10, 40, 40, function (x, y) {
   return createShape(x, y)
 })
 
-const circle = Bodies.circle(w / 2, h / 2, Math.min(w / 4.5, h / 4.5), {
+const circle = Bodies.circle(w / 2, h / 2, Math.min(w / 4.8, h / 4.8), {
   isStatic: true,
   render: {
     fillStyle: '#F6B67B',
@@ -170,6 +170,19 @@ window.addEventListener('deviceorientation', function (event) {
     x: (event.gamma / 50),
     y: (event.beta / 25)
   }
+
+  document.addEventListener("click", function () {
+  if (typeof DeviceMotionEvent.requestPermission === 'function') {
+    DeviceMotionEvent.requestPermission()
+        .then(permissionState => {
+          if (permissionState === 'granted') {
+            window.addEventListener('deviceorientation', function (event) {
+              // your device orientation code
+            })
+          }
+        })
+  }
+})
 
   Engine.update(engine)
 })
