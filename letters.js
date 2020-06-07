@@ -25,18 +25,18 @@ const renderer = Render.create({
 const createShape = function (x, y) {
   const randomNum = Math.random()
 
-  if (randomNum > 0.75) {
+  if (randomNum > 0.85) {
     return Bodies.circle(x, y, 30, {
       render: {
         sprite: {
-          texture: "banana.png",
+          texture: "bananal.png",
           xScale: 1,
           yScale: 1
         }
       }
     })
   }
-    else if (randomNum > 0.6) {
+    else if (randomNum > 0.7) {
         return Bodies.circle(x, y, 30, {
       render: {
         sprite: {
@@ -47,7 +47,7 @@ const createShape = function (x, y) {
       }
     })
   }
-  else if (randomNum > 0.45) {
+  else if (randomNum > 0.55) {
         return Bodies.circle(x, y, 30, {
       render: {
         sprite: {
@@ -58,7 +58,7 @@ const createShape = function (x, y) {
       }
     })
   }
-  else if (randomNum > 0.3) {
+  else if (randomNum > 0.4) {
         return Bodies.circle(x, y, 30, {
       render: {
         sprite: {
@@ -69,7 +69,7 @@ const createShape = function (x, y) {
       }
     })
   }
-  else if (randomNum > 0.2) {
+  else if (randomNum > 0.25) {
         return Bodies.circle(x, y, 30, {
       render: {
         sprite: {
