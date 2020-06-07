@@ -1,0 +1,17 @@
+body {
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+section.fonts {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+
