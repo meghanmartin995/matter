@@ -30,8 +30,8 @@ const createShape = function (x, y) {
       render: {
         sprite: {
           texture: "banana.png",
-          xScale: 0.082,
-          yScale: 0.082
+          xScale: 0.085,
+          yScale: 0.085
         }
       }
     })
@@ -41,8 +41,8 @@ const createShape = function (x, y) {
       render: {
         sprite: {
           texture: "apricot.png",
-          xScale: 0.032,
-          yScale: 0.032
+          xScale: 0.035,
+          yScale: 0.035
         }
       }
     })
@@ -52,8 +52,8 @@ const createShape = function (x, y) {
       render: {
         sprite: {
           texture: "mango.png",
-          xScale: 0.095,
-          yScale: 0.095
+          xScale: 0.098,
+          yScale: 0.098
         }
       }
     })
@@ -63,8 +63,8 @@ const createShape = function (x, y) {
       render: {
         sprite: {
           texture: "cherry.png",
-          xScale: 0.22,
-          yScale: 0.22
+          xScale: 0.25,
+          yScale: 0.25
         }
       }
     })
@@ -74,8 +74,8 @@ const createShape = function (x, y) {
       render: {
         sprite: {
           texture: "lemon.png",
-          xScale: 0.082,
-          yScale: 0.082
+          xScale: 0.085,
+          yScale: 0.085
         }
       }
     })
@@ -85,8 +85,8 @@ const createShape = function (x, y) {
       render: {
         sprite: {
           texture: "orange.png",
-          xScale: 0.032,
-          yScale: 0.032
+          xScale: 0.035,
+          yScale: 0.035
         }
       }
     })
@@ -96,8 +96,8 @@ const createShape = function (x, y) {
       render: {
         sprite: {
           texture: "strawberry.png",
-          xScale: 0.078,
-          yScale: 0.078
+          xScale: 0.082,
+          yScale: 0.082
         }
       }
     })
